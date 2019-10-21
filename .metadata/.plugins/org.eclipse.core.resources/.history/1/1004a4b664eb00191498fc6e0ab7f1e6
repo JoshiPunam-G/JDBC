@@ -1,0 +1,27 @@
+package com.bridgelabz.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexDemo {
+
+	
+	private static final String s1="john";
+	private static final String s2="john smith ";
+	public static void main(String[] args) {
+		
+		System.out.println("Hello" + s2);
+		System.out.println("Regular Expression");
+		Pattern p=Pattern.compile(s1);
+		
+		Matcher m1=p.matcher(s1);
+		String FullName=m1.replaceAll(s2);
+		
+		System.out.println(FullName);
+		
+		while(m1.find())
+			System.out.println(m1.group());
+
+	}
+
+}

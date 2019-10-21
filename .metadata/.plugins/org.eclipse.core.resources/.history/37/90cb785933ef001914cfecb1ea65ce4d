@@ -1,0 +1,17 @@
+package com.bridgelabz.creational.factory;
+
+public  class PC implements computer{
+
+	@Override
+	public String getRAM() {
+		
+		System.out.println("");
+		
+	return null;
+	}
+
+	
+
+	
+
+}

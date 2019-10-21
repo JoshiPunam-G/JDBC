@@ -1,0 +1,11 @@
+package com.bridgelabz.structural.mediator;
+
+public class UserImpl extends User {
+
+	public UserImpl(ChatInterface mediator, String name) {
+		super(mediator, name);
+		
+	}
+	
+
+}

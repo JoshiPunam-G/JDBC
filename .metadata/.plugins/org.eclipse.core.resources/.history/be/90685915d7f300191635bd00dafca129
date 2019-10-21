@@ -1,0 +1,17 @@
+package com.bridgelabz.Dependency;
+
+import org.springframework.context.ApplicationContext;
+
+ /* Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext appContext = new ClassPathXmlApplicationContext("spring.xml");
+     
+     Vehicle obj=(Vehicle)appContext.getBean("Vehicle");
+     obj.drive();
+    }
+}

@@ -1,0 +1,9 @@
+package com.bridgelabz.Dependency;
+
+public class Mobile {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

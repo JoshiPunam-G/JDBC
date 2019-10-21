@@ -1,0 +1,7 @@
+package com.bridgelabz.dependencyingection;
+
+public class Student {
+     String studName;
+     
+     
+}

@@ -1,0 +1,18 @@
+package com.bridgelabz.structural.mediator;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ChatMediatorImpl implements ChatInterface  {
+
+	
+	private List<User> users;
+
+	public ChatMediatorImpl()
+	{
+		this.users=new ArrayList<>();
+		
+	}
+
+
+}

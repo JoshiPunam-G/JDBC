@@ -1,0 +1,15 @@
+package com.bridgelabz.creational.prototype;
+
+public class BookMain {
+
+	public static void main(String[] args) {
+	
+		BookShop bs=new BookShop();
+		bs.setShopName("NOVELTY");
+	    bs.loaddata();
+		System.out.println(bs);
+		
+		
+	}
+
+}

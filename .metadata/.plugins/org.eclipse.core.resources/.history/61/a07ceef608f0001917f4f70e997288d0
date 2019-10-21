@@ -1,0 +1,8 @@
+package com.bridgelabz.structural.observer;
+
+public class Subscriber {
+
+	private String name;
+	private Channel channel;
+	
+}

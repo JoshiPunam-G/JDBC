@@ -1,0 +1,40 @@
+package com.bridgelabz.creational.prototype;
+
+import java.util.ArrayList;
+import java.util.List;
+import Utility.Utility;
+
+
+public class BookShop {
+	private String shopName;
+	List<Book> book;
+	
+	@Override
+	public String toString() {
+		return "BookShop [shopName=" + shopName + ", book=" + book + "]";
+	}
+	public String getShopName() {
+		return shopName;
+	}
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+	public List<Book> getBook() {
+		return book;
+	}
+	public void setBook(List<Book> book) {
+		this.book = book;
+	}
+	
+	public void loaddata()
+	{
+		for(int i=1;i<=5;i++) {
+			List<Book> b=new ArrayList<Book>();
+			
+			System.out.println("Enter Book id");
+			int id=Utility.
+		 		}
+	}
+	
+
+}

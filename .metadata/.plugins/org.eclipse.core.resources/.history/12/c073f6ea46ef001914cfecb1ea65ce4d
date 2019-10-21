@@ -1,0 +1,27 @@
+package com.bridgelabz.creational.prototype;
+
+public class BookMain {
+
+	public static void main(String[] args) throws CloneNotSupportedException {
+	
+		BookShop bs=new BookShop();
+		bs.setShopName("NOVELTY");
+	    bs.loaddata();
+		System.out.println(bs);
+		
+		
+		BookShop bs1=(BookShop)bs1.clone();
+		bs1.setShopName("LIBERTY");
+		System.out.println(bs1);
+		
+		
+//		System.out.println("Another Book Shop");
+//		BookShop bs1=(BookShop)bs.clone();
+//		bs1.setShopName("LIBERTY");
+//		
+//		System.out.println(bs);
+//		
+		
+	}
+
+}

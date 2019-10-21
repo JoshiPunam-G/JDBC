@@ -1,0 +1,16 @@
+package com.bridgelabz.Dependency;
+
+
+public class Mobile {
+
+	public static void main(String[] args) {
+		
+		ApplicationContext context=new Class
+		System.out.println("Class Loaded");
+	
+		Airtel airtel=(Airtel)context.getBean("airtel");
+		airtel.calling();
+		airtel.data();
+	}
+
+}

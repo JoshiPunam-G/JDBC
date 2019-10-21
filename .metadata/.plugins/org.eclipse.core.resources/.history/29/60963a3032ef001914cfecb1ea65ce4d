@@ -1,0 +1,15 @@
+package com.bridgelabz.creational.factory;
+
+public class TestFactory {
+
+	public static void main(String[] args) {
+		
+		Computer pc=ComputerFactory.getComputer("pc", "2 GB","500 GB" , "2.4 GHz");
+		Computer server=ComputerFactory.getComputer("server", "3 GB", "1 TB", "2.9 GHz");
+        System.out.println("PC Configuration :"+pc);
+        System.out.println("Server Configuration :"+server);
+		
+		
+	}
+
+}

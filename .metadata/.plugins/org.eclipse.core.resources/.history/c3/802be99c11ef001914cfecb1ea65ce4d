@@ -1,0 +1,16 @@
+package com.bridgelabz.creational.singleton;
+
+public class BillPugSingleton {
+	
+	private static BillPugSingleton instance4;
+	
+	private BillPugSingleton(){}
+	
+	public static BillPugSingleton getInstance()
+	{
+		return instance4;
+	}
+	
+	
+
+}

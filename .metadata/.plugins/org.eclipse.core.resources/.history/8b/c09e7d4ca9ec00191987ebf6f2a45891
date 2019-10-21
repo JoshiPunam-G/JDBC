@@ -1,0 +1,45 @@
+package com.bridgelabz.addressbook;
+
+import java.io.IOException;
+
+import org.codehaus.jackson.JsonParseException;
+import org.codehaus.jackson.map.JsonMappingException;
+
+
+import Utility.Utility;
+
+public class AddressBookMain {
+
+	public static void main(String[] args) throws JsonParseException, JsonMappingException, IOException {
+		
+		AddressUtility add=new AddressUtility();
+		
+		 add.addPerson();
+		 
+		 
+		 System.out.println("1. Add Person To AddressBook ");
+		 System.out.println("2. Edit Person Information ");
+		 System.out.println("3. Remove Person From AddressBook");
+		 System.out.println("4. Sort Entries in AddressBook  ");
+		 System.out.println("Enter Your Choice ");
+		 int choice=Utility.isInteger();
+		 switch(choice)
+		 {
+		 case 1:
+			 add.readfile();
+			 add.addPerson();
+			 break;
+		 case 2:
+			 System.out.println("Enter first name");
+			 String fname=Utility.isString();
+			 add.edit(fname);
+			 
+			 
+			 
+		 }
+		 
+		 
+
+	}
+
+}

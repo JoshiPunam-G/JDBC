@@ -1,0 +1,6 @@
+package com.bridgelabz.Dependency;
+
+public interface Sim{
+
+	public void drive();
+}

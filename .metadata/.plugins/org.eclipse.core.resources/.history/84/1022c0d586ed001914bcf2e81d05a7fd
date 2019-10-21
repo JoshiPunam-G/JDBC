@@ -1,0 +1,5 @@
+package com.bridgelaz.clinic.model;
+
+public class Clinic {
+
+}

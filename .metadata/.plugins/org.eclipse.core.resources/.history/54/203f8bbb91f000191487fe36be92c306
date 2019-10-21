@@ -1,0 +1,9 @@
+package com.bridgelabz.structural.mediator;
+
+public interface ChatInterface {
+	void sendMessage(String msg, User user);
+	void addUser(User user);
+
+	
+
+}

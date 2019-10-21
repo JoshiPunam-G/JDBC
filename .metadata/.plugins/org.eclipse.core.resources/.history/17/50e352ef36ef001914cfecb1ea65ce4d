@@ -1,0 +1,8 @@
+package com.bridgelabz.creational.factory;
+
+public interface computer {
+
+     public void show();
+	
+	
+}

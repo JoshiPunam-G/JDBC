@@ -1,0 +1,10 @@
+package com.bridgelabz.creational.singleton;
+
+public class EagerInitialization {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

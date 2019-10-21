@@ -1,0 +1,18 @@
+package com.bridgelabz.creational.singleton;
+
+
+class test
+{
+	public static test instance5=new test();
+	
+	private test() {}
+}
+public class ReflectionSingleton {
+
+	public static void main(String[] args) {
+		
+		test obj=test.instance5;
+		
+	}
+
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.model.Address"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.model.Person"/>
+<fullyQualifiedTypeName name="com.bridgelabz.addressbook.model.AddressBookModel"/>
+<fullyQualifiedTypeName name="java.util.stream.Collector"/>
+<fullyQualifiedTypeName name="java.util.stream.Collector.Characteristics"/>
+<fullyQualifiedTypeName name="java.util.stream.Collectors"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.bridgelabz.clinic.Doctor"/>
+<fullyQualifiedTypeName name="com.bridgelabz.clinic.Patient"/>
+<fullyQualifiedTypeName name="com.bridgelaz.clinic.model.ClinicModel"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.bridgelaz.clinic.model.Clinic"/>
+<fullyQualifiedTypeName name="com.bridgelaz.clinic.model.Doctor"/>
+<fullyQualifiedTypeName name="com.bridgelaz.clinic.model.Patient"/>
+<fullyQualifiedTypeName name="com.bridgelaz.clinic.model.Appointment"/>
+<fullyQualifiedTypeName name="java.io.IOException"/>
+<fullyQualifiedTypeName name="com.bridgelaz.clinic.model.User"/>
+<fullyQualifiedTypeName name="org.codehaus.jackson.map.ObjectMapper"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.bridgelabz.structural.facde.HelperFacade.DBTypes"/>
+<fullyQualifiedTypeName name="com.bridgelabz.structural.facde.HelperFacade.ReportTypes"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.util.Properties"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="Utility.Utility"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="com.bridgelabz.jdbc.DBUtility"/>
+</qualifiedTypeNameHistroy>

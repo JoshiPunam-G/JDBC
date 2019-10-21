@@ -1,0 +1,10 @@
+package com.bridgelabz.structural.adapter;
+
+public class TestAdapter {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

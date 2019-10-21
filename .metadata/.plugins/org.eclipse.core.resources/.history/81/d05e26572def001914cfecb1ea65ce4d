@@ -1,0 +1,7 @@
+package com.bridgelabz.creational.factory;
+
+public abstract class PC extends Computer{
+	
+	
+
+}

@@ -1,0 +1,38 @@
+package com.bridgelabz.structural.proxy;
+
+ interface DatabaseExecutor
+{
+  public void executeDatabase(String query)throws Exception;	
+}
+
+public class DatabaseExecuterImpl implements DatabaseExecutor
+{
+
+	@Override
+	public void executeDatabase(String query)throws Exception{
+		System.out.println("Excute Query:"+query);
+	}
+	
+}
+
+public class DatabaseExecuteProxy implements DatabaseExecutor
+{
+	boolean isadmin=true;
+	DatabaseExecuterImpl dbexecutor;
+	
+	public  DatabaseExecuteProxy(String name,String password){
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+	
+}
+
+public class ProxyPatternExample {
+
+	public static void main(String[] args) {
+	
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.bridgelabz.creational.singleton;
+
+public class Singleton {
+
+	public static void main(String[] args) {
+		
+		
+		
+		for(int i=0;i<5;i++)
+		{
+			EagerInitializedSingleton instance=EagerInitializedSingleton.getInstance();
+		System.out.println(instance.hashCode());	
+		}
+	}
+
+}

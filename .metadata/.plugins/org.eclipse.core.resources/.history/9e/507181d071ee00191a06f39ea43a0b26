@@ -1,0 +1,18 @@
+package com.bridgelabz.creational.singleton;
+
+public class EagerInitializedSingleton {
+	private static EagerInitializedSingleton instance;
+	
+	private EagerInitializedSingleton() {}
+	
+	public static EagerInitializedSingleton instance()
+	{
+		if(instance==null)
+		{
+			instance=new EagerInitializedSingleton();
+		}
+		return instance;
+	}
+	
+
+}

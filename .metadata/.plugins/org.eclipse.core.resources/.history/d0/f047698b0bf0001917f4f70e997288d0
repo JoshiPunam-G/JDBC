@@ -1,0 +1,24 @@
+package com.bridgelabz.structural.observer;
+
+public class YoutTube {
+
+	public static void main(String[] args) {
+		
+		Channel telusko=new Channel();
+		
+		Subscriber s1=new Subscriber ("pratibha");
+		Subscriber s2=new Subscriber ("nikita");
+		Subscriber s3=new Subscriber ("mrunal");
+		Subscriber s4=new Subscriber ("seema");
+		Subscriber s5=new Subscriber ("sarthak");
+		
+		telusko.subscibe(s1);
+		telusko.subscibe(s2);
+		telusko.subscibe(s3);
+		telusko.subscibe(s4);
+		telusko.subscibe(s5);
+		
+
+	}
+
+}

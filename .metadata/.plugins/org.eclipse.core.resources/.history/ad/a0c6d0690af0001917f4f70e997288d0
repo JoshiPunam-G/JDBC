@@ -1,0 +1,20 @@
+package com.bridgelabz.structural.observer;
+
+public class Subscriber {
+
+	private String name;
+	private Channel channel;
+	
+	public void update()
+	{
+		System.out.println("video uploaded ");
+	}
+
+	@Override
+	public String toString() {
+		return "Subscriber [name=" + name + "]";
+	}
+	
+	
+	
+}

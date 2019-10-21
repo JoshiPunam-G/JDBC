@@ -1,0 +1,16 @@
+package com.bridgelabz.creational.factory;
+
+public class Server implements computer{
+
+	@Override
+	public void show() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
+
+
+	
+
+}

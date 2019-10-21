@@ -1,0 +1,28 @@
+package com.bridgelabz.creational.singleton;
+
+
+
+public enum EnumSingleton{
+	INSTANCE;
+	int value;
+	public int getValue()
+	{
+		return value;
+	}
+	public void setValue(int value)
+	{
+		this.value=value;
+	}
+
+}
+public class EnumDemoSingle {
+
+	public static void main(String[] args) {
+	
+		EnumSingleton singleton=EnumSingleton.INSTANCE;
+		System.out.println(singleton.getValue());
+		singleton.setValue(10);
+		System.out.println();
+	}
+
+}

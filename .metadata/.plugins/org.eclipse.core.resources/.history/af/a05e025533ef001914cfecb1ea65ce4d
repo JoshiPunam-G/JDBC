@@ -1,0 +1,10 @@
+package com.bridgelabz.creational.factory;
+
+public interface computer {
+
+    String  getRAM();
+    String getHDD();
+    String getCPU();
+	
+	
+}

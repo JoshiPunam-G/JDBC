@@ -1,0 +1,8 @@
+package org.springframework.context;
+
+import com.bridgelabz.Dependency.Vehicle;
+
+public class ClassPathXmlApplicationContext {
+
+
+}

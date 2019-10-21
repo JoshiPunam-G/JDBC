@@ -1,0 +1,23 @@
+package com.bridgelabz.regex;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegexDemo {
+
+	
+	 public String replaceWithPattern(String str,String replace)
+	   {   
+	        Pattern ptn = Pattern.compile("\\s+");
+	        Matcher mtch = ptn.matcher(str);
+	        return mtch.replaceAll(replace);
+	    }
+	public static void main(String[] args) {
+		String str=" Hello <<name>> ";
+		RegexDemo rd=new RegexDemo();
+		rd.replaceWithPattern(str, "john");
+		
+		
+	}
+
+}

@@ -1,0 +1,137 @@
+package com.bridgelabz.callablestatement;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Scanner;
+
+public class CollableUtility {
+	static Scanner sc=new Scanner(System.in);
+	public static void loginUser(String user,String pwd)
+	{
+		try
+		{
+			    Connection con=getConnection();
+				PreparedStatement st=con.prepareStatement("select * from login where username=? and password=?" );
+				st.setString(1, user);
+				st.setString(2,pwd);
+				ResultSet rs=st.executeQuery();
+				int count=0;
+				while(rs.next()){  
+				//rs.getString(1)+" "+rs.getString(2); 
+				count++;
+				} 
+				if(count>0)
+				{			
+				  System.out.println("Login Successfully");
+				}
+				else 
+				{
+					System.out.println("Username & Password Not Found ");
+					int count1=0;
+					while(count1>=0)
+					{
+					System.out.println("Do You Want To Register ");
+					System.out.println("1. Yes  \n 2. No  \n 3.EXIT");
+					int choice=sc.nextInt();
+					switch(choice)
+					{
+					case 1: register(); break;
+					case 2: System.out.println("Thank You "); count1=1; return;
+					case 3: System.out.println("EXIT");  count1=1; return;
+					default: System.out.println("wrong choice"); count1=1;return;
+					}
+					}
+				}
+			
+		}catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+	
+	
+	
+	public static void register()
+	{
+		try
+		{	
+			Connection con=getConnection();
+
+			PreparedStatement st=con.prepareStatement("insert into register values (?,?,?)");
+			
+			System.out.println("**Registration Form**");
+		
+		    System.out.println("Enter name:");
+		    String user=sc.next();
+		    System.out.println("Enter Email");
+		    String email=sc.next();
+		   // sc.next();
+		    System.out.println("Enter Age");
+		    int age=sc.nextInt();
+		
+			st.setString(1, user);
+			st.setString(2, email);
+			st.setInt(3,age);
+			
+			st.executeUpdate();
+			
+			insertUSer();
+			
+//		    
+			System.out.println(" Registration Successfully ..!");
+		}catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		
+	}
+	
+public static void insertUSer()
+{
+	try
+	{
+		Connection con=getConnection();
+		PreparedStatement st=con.prepareStatement("insert into login values (?,?)");
+		
+		System.out.println("Enter New Details");
+		
+		
+		System.out.println("Enter Username");
+		String user=sc.next();
+		String password=validate();
+		
+		st.setString(1, user);
+		st.setString(2, password);
+		
+		int i=st.executeUpdate();
+		System.out.println( i  +  "Record Inserted Successfully");
+	
+	}catch(Exception e)
+	{
+		System.out.println(e);
+	}
+}
+
+public static String validate()
+{
+	System.out.println("Enter New Password");
+	String password=sc.next();	
+	System.out.println("Re-Enter passowrd");
+	String repassword=sc.next();
+	
+	if(password==repassword)
+	{
+		System.out.println("Password Match");
+	}
+	else
+	{
+		System.out.println("Password Should Be Same");
+		validate();
+	}
+	return password;
+	
+}
+
+
+}

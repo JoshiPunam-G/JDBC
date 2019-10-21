@@ -1,0 +1,10 @@
+package com.bridgelaz.clinic.model;
+
+import java.util.List;
+
+public class ClinicModel {
+List<Doctor> doctor;
+List<Patient> patient;
+
+
+}

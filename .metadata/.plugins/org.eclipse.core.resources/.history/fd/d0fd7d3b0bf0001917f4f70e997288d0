@@ -1,0 +1,15 @@
+package com.bridgelabz.structural.observer;
+
+public class YoutTube {
+
+	public static void main(String[] args) {
+		
+		Channel telusko=new Channel();
+		
+		Subscriber subsc=new Subscriber("pratibha");
+		
+		
+
+	}
+
+}

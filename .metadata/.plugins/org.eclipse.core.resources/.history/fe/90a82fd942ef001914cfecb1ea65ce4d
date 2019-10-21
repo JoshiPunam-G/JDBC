@@ -1,0 +1,55 @@
+package com.bridgelabz.creational.prototype;
+
+
+import java.util.List;
+import Utility.Utility;
+
+
+public class BookShop {
+	private String shopName;
+	List<Book> book;
+	
+	
+	public String getShopName() {
+		return shopName;
+	}
+	public void setShopName(String shopName) {
+		this.shopName = shopName;
+	}
+	public List<Book> getBook() {
+		return book;
+	}
+
+	
+	public void loaddata()
+	{
+		System.out.println("Enter How Many Book You Want");
+		int count=Utility.isInteger();
+		for(int i=0;i<=count;i++) 
+		{
+			System.out.println("Enter Book id");
+			int id=Utility.isInteger();
+			Utility.isString();
+			System.out.println("Enter Book name");
+			String name=Utility.isString();
+			
+			Book b=new Book();
+			b.setBookid(id);
+			b.setBookname(name);
+			getBook();
+			//getBook().add(b);
+			
+		 }
+	}
+	
+	public void setBook(List<Book> book) {
+		this.book = book;
+	}
+	
+	@Override
+	public String toString() {
+		return "BookShop [shopName=" + shopName + ", book=" + book + "]";
+	}
+	
+
+}

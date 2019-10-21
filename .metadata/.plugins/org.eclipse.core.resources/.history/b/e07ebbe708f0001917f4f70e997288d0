@@ -1,0 +1,5 @@
+package com.bridgelabz.structural.observer;
+
+public class Subscriber {
+
+}

@@ -1,0 +1,44 @@
+package com.bridgelabz.structural.adapter;
+
+public class TestAdapter {
+
+	public static void main(String[] args) {
+		testClassAdapter();
+		testObjectAdapter();
+
+	}
+	
+	
+	private static void testClassAdapter() {
+		SocketAdapter sa=new SocketClassAdapter();
+		Volt v120=getVolt(sa,120);
+		
+	}
+
+
+
+
+
+	private static void testObjectAdapter() {
+		SocketAdapter sa=new SocketObjectAdapter();
+		
+		
+	}
+
+	
+	private static Volt getVolt(SocketAdapter sa, int i) {
+		switch(i)
+		{
+		case 120:
+			return sa.get120Volt();
+		case 12:
+			return sa.get12Volt();
+		case 3:
+			return sa.get3Volt();
+	    default :return sa.get120Volt();		
+		}
+	
+	}
+	
+
+}

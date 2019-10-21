@@ -1,0 +1,291 @@
+package com.bridgelabz.jdbc;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class DBUtility {
+	
+	/**
+	 * creating connection 
+	 * @return
+	 * @throws ClassNotFoundException
+	 */
+
+	public static Connection getConnection() throws ClassNotFoundException
+	{
+		try {
+			
+		Class.forName("com.mysql.jdbc.Driver");	
+		
+		String url="jdbc:mysql://localhost:3306/testdb";
+		String username="root";
+		String password="admin@123";
+		
+		Connection conn=DriverManager.getConnection(url,username,password);
+		System.out.println("connected...");
+		System.out.println();
+	//	conn.close();
+		return conn;
+		} catch (SQLException e) {
+		
+			e.printStackTrace();
+		}
+		
+		return null;
+		
+	}
+	
+	     /**
+	      * create table using statement interface
+	      * @throws ClassNotFoundException
+	      */
+		public static void createNewTable() throws ClassNotFoundException
+		{
+			
+			 String sql = "CREATE TABLE IF NOT EXISTS studentinfo (\n"
+		                + "    id integer NOT NULL AUTO_INCREMENT,\n"
+		                + "    firstname varchar(20) ,\n"
+		                + "    lastname varchar(20) \n"
+		                + ");";
+			 try {
+				 Connection con=getConnection();
+				 Statement st=con.createStatement();
+				 st.execute(sql);
+				 System.out.println("Table Created Successfully ");
+				 System.out.println();
+				 con.close();
+			 }catch(Exception e)
+			 {
+				 System.out.println(e.getMessage());
+			 }
+			
+		}
+		
+		/**
+		 * inserting records using statement interface .
+		 * @throws ClassNotFoundException
+		 * @throws SQLException
+		 */
+		public static void  insertData() throws ClassNotFoundException, SQLException
+		{
+			String sql ="INSERT INTO studentinfo (id,firstname ,lastname) "
+					+"VALUES ( 4, 'vrushali','joshi')";
+			
+			try
+			{
+				Connection con=getConnection();
+				Statement st=con.createStatement();
+				int i=st.executeUpdate(sql);
+				
+				System.out.println( i +"Record Inserted Successfully..");
+				System.out.println();
+				con.close();
+			}catch(Exception e)
+			{
+				System.out.println(e.getMessage());
+			}
+		}
+		
+		/**
+		 * update records using statement interface .
+		 */
+		public  static void Updatetable()
+		{
+			String sql="UPDATE  studentinfo SET firstname='sarthak' where id=2 ";
+
+			try
+			{
+				Connection con=getConnection();
+				Statement st=con.createStatement();
+				int i=st.executeUpdate(sql);
+				System.out.println(i  +"Record Updated Successfully..");
+				System.out.println();
+				con.close();
+			}catch(Exception e)
+			{
+				System.out.println(e.getMessage());
+			}
+		}
+		
+		/**
+		 * delete record from table using statement interface .
+		 */
+		public static void Delete()
+		{
+			String sql="DELETE FROM studentinfo where firstname='punam' ";
+			try
+			{
+				Connection con=getConnection();
+				Statement st=con.createStatement();
+				int i=st.executeUpdate(sql);
+				System.out.println(i  +"Record Deleted Successfully..");
+				System.out.println();
+				con.close();
+			}catch(Exception e)
+			{
+				System.out.println(e.getMessage());
+			}
+		}
+		
+		/**
+		 *  retrieve record 
+		 * of table using statement interface .
+		 */
+		public static void show()
+		{
+			String sql="select * from studentinfo";
+			try
+			{
+				Connection con=getConnection();
+				Statement st=con.createStatement();
+				ResultSet rs=st.executeQuery(sql);  
+				while(rs.next())
+				{  
+					System.out.println(rs.getInt(1)+" "+rs.getString(2));  
+				}  
+				   
+					System.out.println("Record Retrieved Successfully");
+				System.out.println("Record Retrieved Successfully ");
+				con.close();
+			}catch(Exception e)
+			{
+				System.out.println(e.getMessage());
+			}
+		}
+		
+		
+		//*************************PreparedStatemnet Interface**************************************
+		
+		/***
+		 * create table 
+		 */
+		public static void createTable()
+		{
+			try
+			{
+				Connection con=getConnection();
+				PreparedStatement create=con.prepareStatement("create table StudentData( stud_id  int NOT NULL, firstname varchar(20) ,lastname varchar(20)   ,PRIMARY KEY (stud_id))");
+				create.executeUpdate();
+				//con.close();
+			}catch(Exception e)
+			{
+				System.out.println(e);
+			}
+			
+			System.out.println("Table Has been Created Successfully");
+		}
+		
+		/**
+		 * insert record
+		 */
+		public static void isInsert()
+		{
+			try
+			{
+				Connection con=getConnection();
+				PreparedStatement st=con.prepareStatement("insert into StudentData values (?,?,?)");
+				st.setInt(1, id);
+				st.setString(2, first);
+				st.setString(3,last);
+			/*	BufferedReader br=new BufferedReader(new InputStreamReader(System.in));  
+				do {
+					System.out.println("Enter Student id");
+					int id=Integer.parseInt(br.readLine());
+					br.readLine();
+					System.out.println("Enter Student First Name");
+					String first=br.readLine();
+					System.out.println("Enter Student Last Name");
+					String last=br.readLine();
+					st.setInt(1, id);
+					st.setString(2, first);
+					st.setString(3,last);*/
+					
+					int i=st.executeUpdate();
+					System.out.println( i  +  "Record Inserted Successfully");
+					//System.out.println();
+				}while(true);
+				
+				
+				
+			//	con.close();
+				
+			}catch(Exception e)
+			{
+				System.out.println(e);
+			}
+		}
+		
+		/**
+		 * update table
+		 */
+		public static void isUpdate()
+		{
+			try
+			{
+				Connection con=getConnection();
+				PreparedStatement st=con.prepareStatement("update StudentData set firstname=? where lastname=?");
+			    st.setString(1, "ashwini");
+	            st.setString(2, "kolte");
+			    int i=st.executeUpdate();
+				System.out.println( i  +  "Record Updated  Successfully");
+				//con.close();
+				
+			}catch(Exception e)
+			{
+				System.out.println(e);
+			}
+			
+		}
+		/**
+		 * delete record 
+		 */
+		public static void isDelete()
+		{
+			try
+			{
+				Connection con=getConnection();
+				PreparedStatement st=con.prepareStatement("delete from StudentData where stud_id=?");
+	            st.setInt(1, 50);
+			    int i=st.executeUpdate();
+				System.out.println( i   + "Record Deleted  Successfully");
+				//con.close();
+				
+			}catch(Exception e)
+			{
+				System.out.println(e);
+			}
+			
+		}
+		/**
+		 * retrieve the records of a table
+		 */
+		public static void retrieve()
+		{
+			try
+			{
+				Connection con=getConnection();
+				PreparedStatement st=con.prepareStatement("select * from StudentData");
+				ResultSet rs=st.executeQuery();  
+				
+				while(rs.next()){  
+				System.out.println(rs.getInt(1)+" "+rs.getString(2));  
+				}  
+			   
+				System.out.println("Record Retrieved Successfully");
+				//con.close();
+				
+			}catch(Exception e)
+			{
+				System.out.println(e);
+			}
+		}
+		
+		
+
+}

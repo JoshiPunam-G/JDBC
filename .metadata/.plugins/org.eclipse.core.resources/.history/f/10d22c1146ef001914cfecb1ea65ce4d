@@ -1,0 +1,21 @@
+package com.bridgelabz.creational.prototype;
+
+public class BookMain implements Clonnable{
+
+	public static void main(String[] args) {
+	
+		BookShop bs=new BookShop();
+		bs.setShopName("NOVELTY");
+	    bs.loaddata();
+		System.out.println(bs);
+		
+		System.out.println("Another Book Shop");
+		BookShop bs1=(BookShop)bs.clone();
+		bs1.setShopName("LIBERTY");
+		bs.loaddata();
+		System.out.println(bs);
+		
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package com.bridgelabz.Dependency;
+
+import org.springframework.context.ApplicationContext;
+
+public class ClassPathXmlApplicationContext extends ApplicationContext {
+
+	public ClassPathXmlApplicationContext(String string) {
+		
+	
+	}
+
+	private void drive() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

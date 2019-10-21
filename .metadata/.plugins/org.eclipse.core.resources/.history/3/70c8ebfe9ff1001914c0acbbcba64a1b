@@ -1,0 +1,37 @@
+package com.bridgelabz.jdbc;
+
+import Utility.Utility;
+
+public class LoginRegister {
+
+	public static void main(String[] args) {
+		
+		
+		System.out.println("***Login & Registration***");
+		
+		int count=0;
+	    while(count>=0)
+	    {
+	    	System.out.println("1. LOGIN");
+	    	System.out.println("2. REGISTER");
+	    	System.out.println("3. EXIT");
+	    	System.out.println("Enter Your Choice");
+	    	int choice=Utility.isInteger();
+	    	
+	    	switch(choice)
+	    	{
+	    	case 1:
+	    		DBUtility.loginUser();
+	    		DBUtility.retrieve();
+	    		break;
+	    	default:
+	    		System.out.println("You Entered Wrong Choice  ");
+	    		count=1;
+	    		return;
+	    		
+	    	}
+	    	
+	    }
+	}
+
+}

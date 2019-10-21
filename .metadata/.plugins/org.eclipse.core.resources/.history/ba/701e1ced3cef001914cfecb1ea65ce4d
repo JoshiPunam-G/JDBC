@@ -1,0 +1,16 @@
+package com.bridgelabz.creational.prototype;
+
+import java.util.List;
+
+public class Employee {
+	
+	private List<String> emplist;
+	
+	private Employee() {}
+	
+	public Employee(List<String> list)
+	{
+		this.emplist=list;
+	}
+
+}

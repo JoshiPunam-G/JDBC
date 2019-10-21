@@ -1,0 +1,20 @@
+package com.bridgelabz.creational.singleton;
+
+public class EagerInitialization {
+	
+	private EagerInitialization()
+	{
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		final EagerInitialization instance = new EagerInitialization();
+		
+//        EagerInitialization getInstance()
+//        {
+//        	return;
+//        }
+	}
+
+}
