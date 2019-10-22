@@ -1,0 +1,15 @@
+package com.bridgelabz.spring_core_annotation;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.ApplicationContext;
+
+public class Client {
+
+	public static void main(String[] args) {
+
+
+	ApplicationContext context=new ClassPathXmlApplicationContext("college.xml");
+	System.out.println("college.xml loaded");
+	}
+
+}

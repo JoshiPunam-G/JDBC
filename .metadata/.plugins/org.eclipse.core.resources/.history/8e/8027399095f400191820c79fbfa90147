@@ -1,0 +1,18 @@
+package com.bridgelabz.di.objecttypevalue;
+
+public class Student {
+
+
+   private  ScienceCheat cheat;
+    
+	public void setCheat(ScienceCheat cheat) {
+		this.cheat = cheat;
+	}
+
+
+
+	public void cheating()
+	{ 
+		cheat.ScienceCheat();
+	}
+}

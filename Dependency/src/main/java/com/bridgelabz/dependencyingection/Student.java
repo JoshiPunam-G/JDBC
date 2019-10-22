@@ -1,22 +1,32 @@
 package com.bridgelabz.dependencyingection;
 
 public class Student {
+	
     private String studName;
     private int rollNo;
-    
-     
-    
-	public void setRollNo(int rollNo) {
+   
+	public Student(int rollNo) {
 		this.rollNo = rollNo;
-		System.out.println("Setter method Call :"+ " :setRollNo ");
-		
 	}
 
-	public void setStudName(String studName) {
+	public Student(String studName, int rollNo) {
 		this.studName = studName;
-		System.out.println("Setter method Call :" + ":setStudName ");
+		this.rollNo = rollNo;
 	}
 
+
+
+
+
+	/*
+	 * public void setRollNo(int rollNo) { this.rollNo = rollNo;
+	 * System.out.println("Setter method Call :"+ " :setRollNo ");
+	 * 
+	 * }
+	 * 
+	 * public void setStudName(String studName) { this.studName = studName;
+	 * System.out.println("Setter method Call :" + ":setStudName "); }
+	 */
 
 
 

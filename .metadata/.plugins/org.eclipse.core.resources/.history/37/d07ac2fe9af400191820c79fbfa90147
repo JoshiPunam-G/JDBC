@@ -1,0 +1,8 @@
+package com.bridgelabz.autowiring;
+
+public class Human {
+	
+	private Heart heart;
+	
+
+}

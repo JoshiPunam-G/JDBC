@@ -1,0 +1,38 @@
+package com.bridgelabz.spring_value_required;
+
+import org.springframework.beans.factory.annotation.Value;
+
+public class Student {
+
+	private String name;
+	private String interestedCourse;
+	private String hobby;
+	public String getName() {
+		return name;
+	}
+	@Value("pratibha")
+	public void setName(String name) {
+		this.name = name;
+	}
+	@Value("java")
+	public String getInterestedCourse() {
+		return interestedCourse;
+	}
+	@Value("Dancing")
+	public void setInterestedCourse(String interestedCourse) {
+		this.interestedCourse = interestedCourse;
+	}
+	public String getHobby() {
+		return hobby;
+	}
+	public void setHobby(String hobby) {
+		this.hobby = hobby;
+	}
+	
+	public void displayInfo()
+	{
+		System.out.println("Name of Student  :" +name);
+		System.out.println("Interested Course Name  :" +interestedCourse);
+		System.out.println("Hobby of Student  :"+hobby);
+	}
+}

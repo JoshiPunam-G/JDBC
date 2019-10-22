@@ -1,0 +1,8 @@
+package com.bridgelabz.spring_core_annotation;
+
+import org.springframework.stereotype.Component;
+
+@Component("collegeBean")
+public class College {
+
+}

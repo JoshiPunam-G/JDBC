@@ -1,0 +1,16 @@
+package com.bridgelabz.di.objecttypevalue;
+
+public class Client {
+
+	public static void main(String[] args) {
+
+		
+		Student student=new Student();
+		MathCheat mathcheat=new MathCheat();
+		student.setMathcheat(mathcheat);
+		student.cheating();
+		
+
+	}
+
+}

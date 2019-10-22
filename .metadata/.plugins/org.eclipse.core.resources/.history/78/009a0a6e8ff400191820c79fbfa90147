@@ -1,0 +1,14 @@
+package com.bridgelabz.di.objecttypevalue;
+
+public class AnotherStudent {
+	private MathCheat cheat;
+	
+	public void setMathcheat(MathCheat mathcheat) {
+		this.mathcheat = mathcheat;
+	}
+	public void cheating()
+	{ 
+		mathcheat.mathcheat();
+	}
+
+}

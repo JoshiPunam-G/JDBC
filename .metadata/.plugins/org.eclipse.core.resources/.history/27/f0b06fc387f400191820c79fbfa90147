@@ -1,0 +1,10 @@
+package com.bridgelabz.di.objecttypevalue;
+
+public class MathCheat {
+	
+	public void mathcheat()
+	{
+		System.out.println("Math cheating started");
+	}
+
+}

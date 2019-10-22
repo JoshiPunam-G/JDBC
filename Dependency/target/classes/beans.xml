@@ -5,8 +5,20 @@
    xsi:schemaLocation = "http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
    
-<bean id="student" class="com.bridgelabz.dependencyingection.Student">
+<!-- <bean id="student" class="com.bridgelabz.dependencyingection.Student">
   <property name="studName" value="Sarthak Joshi"/>
   <property name="rollNo" value="50"/>
+</bean> -->
+
+
+<bean id="student" class="com.bridgelabz.dependencyingection.Student">
+  <constructor-arg  name="studName" value="Sarthak Joshi"/>
+  <constructor-arg name="rollNo" value="50"/>
 </bean>
+
+<bean id="vrushali" class="com.bridgelabz.dependencyingection.Student">
+  <constructor-arg name="rollNo" value="51"/>
+</bean>
+
+
 </beans>

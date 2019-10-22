@@ -1,0 +1,7 @@
+package com.bridgelabz.di.objecttypevalue;
+
+public class AnotherStudent {
+	private MathCheat mathcheat;
+	
+
+}

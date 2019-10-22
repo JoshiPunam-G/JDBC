@@ -1,0 +1,5 @@
+package com.bridgelabz.spring_value_required;
+
+public class Student {
+
+}

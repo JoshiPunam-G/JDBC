@@ -1,0 +1,10 @@
+package com.bridgelabz.spring_loose_coupling;
+
+public class ScienceCheat {
+	
+	public void SCienceCheat()
+	{
+		System.out.println( );
+	}
+
+}
