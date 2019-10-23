@@ -1,4 +1,4 @@
-package com.bridgelabz.structural.proxy;
+ package com.bridgelabz.structural.proxy;
 
  interface DatabaseExecutor
 {
