@@ -14,10 +14,6 @@ public class Student {
 		this.rollNo = rollNo;
 	}
 
-
-
-
-
 	/*
 	 * public void setRollNo(int rollNo) { this.rollNo = rollNo;
 	 * System.out.println("Setter method Call :"+ " :setRollNo ");

@@ -14,7 +14,7 @@ import Utility.ConnectionUtility;
 public class BatchUtility {
 	static Scanner sc=new Scanner(System.in);
 	 static	Connection  connection=ConnectionUtility.getConnection();
-	 //****** BatchProcessing Satatement  ************************
+	 //****** BatchProcessing Statement  ************************
 		public static void  insertData() throws ClassNotFoundException, SQLException
 		{
 			Savepoint savepoint1 = connection.setSavepoint("Savepoint1");
@@ -23,7 +23,6 @@ public class BatchUtility {
 			
 			try
 			{
-				
 				connection.setAutoCommit(false);
 				Statement st=connection.createStatement();
 				
@@ -61,7 +60,7 @@ public class BatchUtility {
 			{
 				System.out.println(e.getMessage());
 				connection.rollback(savepoint1);		
-				}
+			}
 		}
 		
 		/**
@@ -88,7 +87,6 @@ public class BatchUtility {
 		
 		//*****************************PreparedStatement********************
 
-		
 		public static void  insertData1() throws ClassNotFoundException, SQLException
 		{
 			String sql ="INSERT INTO studentinfo (id,firstname ,lastname) "
@@ -96,7 +94,6 @@ public class BatchUtility {
 			
 			try
 			{
-				
 				PreparedStatement st=connection.prepareStatement(sql);
 				st.addBatch(sql);
 				int[] count = st.executeBatch();

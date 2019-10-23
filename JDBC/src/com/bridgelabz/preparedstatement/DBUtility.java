@@ -19,7 +19,6 @@ public class DBUtility {
 		
 		//*************************PreparedStatemnet Interface**************************************
 		
-	
 	public static Connection getConnection() throws ClassNotFoundException
 	{
 		try {
