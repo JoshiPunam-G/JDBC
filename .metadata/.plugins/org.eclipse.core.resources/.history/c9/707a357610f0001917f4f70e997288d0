@@ -1,5 +1,0 @@
-package com.bridgelabz.structural.visitor;
-
-public interface ShoppingCartVisitor {
-
-}

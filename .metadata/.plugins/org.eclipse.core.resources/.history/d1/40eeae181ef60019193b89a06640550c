@@ -1,0 +1,10 @@
+package com.bridgelabz.spring_core_annotation;
+
+public class MathTeacher implements Teacher{
+
+	public void teach() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.bridgelabz.spring.model;
+
+public class AccountServiceImpl {
+	public void upddateAccountBalance(Account account,Long amount )
+	{
+		
+	}
+
+}

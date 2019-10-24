@@ -1,0 +1,12 @@
+package com.bridgelabz.spring.model;
+
+import org.aspectj.lang.JoinPoint;
+
+public class AccountServiceAspect {
+	
+	public void beforeAdvice (JoinPoint joinpoint)
+	{
+		System.out.println("Before Method :"+joinpoint.getSignature().getName() + "Class :"+joinpoint.getTarget().getClass().getSimpleName());
+	}
+
+}

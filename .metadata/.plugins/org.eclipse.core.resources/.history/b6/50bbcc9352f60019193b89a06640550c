@@ -1,0 +1,5 @@
+package com.bridgelaz.aop.before;
+
+public class Operation {
+
+}

@@ -1,0 +1,10 @@
+package com.bridgelabz.spring.model;
+
+public class AccountServiceImpl {
+	public void upddateAccountBalance(Account account,int amount )
+	{
+		//Business logic
+		System.out.println("Account Number:"+account.getAccountNumber() + "Amount :"+amount);
+	}
+
+}

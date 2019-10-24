@@ -1,0 +1,7 @@
+package com.bridgelabz.spring.aop;
+
+public class ProxyFactoryBean {
+
+	private Object target;  
+	private List interceptorNames;  
+}
