@@ -10734,3 +10734,36 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2019-10-31 18:08:19,808 [Worker-144: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/CourseAPI/src/main/resources
 2019-10-31 18:08:19,809 [Worker-144: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-10-31 18:08:19,809 [Worker-144: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/CourseAPI/src/test/resources
+2019-10-31 19:15:34,991 [Worker-156: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:15:34,991 [Worker-156: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/CourseAPI/src/main/resources
+2019-10-31 19:15:34,991 [Worker-156: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/CourseAPI/src/main/resources
+2019-10-31 19:15:34,993 [Worker-156: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:15:34,993 [Worker-156: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/CourseAPI/src/test/resources
+2019-10-31 19:37:20,155 [Worker-159: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-10-31 19:37:22,004 [Worker-159: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bridgelabz:springaoc:0.0.1-SNAPSHOT @ /home/admin106/eclipse-workspace/Dependency/pom.xml.
+2019-10-31 19:37:22,595 [Worker-159: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bridgelabz:CourseAPI:0.0.1-SNAPSHOT @ /home/admin106/eclipse-workspace/CourseAPI/pom.xml.
+2019-10-31 19:37:23,142 [Worker-159: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.bridgelabz:springaoc:0.0.1-SNAPSHOT @ /home/admin106/eclipse-workspace/SpringAopAfterReturningAndThrowingException/pom.xml.
+2019-10-31 19:37:25,915 [Worker-159: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CourseAPI/src/main/java
+2019-10-31 19:37:25,915 [Worker-159: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /CourseAPI/src/test/java
+2019-10-31 19:37:26,058 [Worker-159: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Dependency/src/main/java
+2019-10-31 19:37:26,058 [Worker-159: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Dependency/src/test/java
+2019-10-31 19:37:26,223 [Worker-159: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringAopAfterReturningAndThrowingException/src/main/java
+2019-10-31 19:37:26,223 [Worker-159: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /SpringAopAfterReturningAndThrowingException/src/test/java
+2019-10-31 19:37:26,728 [Worker-159: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 6 sec
+2019-10-31 19:37:27,592 [Worker-159: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:37:27,592 [Worker-159: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/CourseAPI/src/main/resources
+2019-10-31 19:37:27,592 [Worker-159: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/CourseAPI/src/main/resources
+2019-10-31 19:37:27,594 [Worker-159: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:37:27,594 [Worker-159: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/CourseAPI/src/test/resources
+2019-10-31 19:37:33,933 [Worker-169: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:37:33,934 [Worker-169: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/Dependency/src/main/resources
+2019-10-31 19:37:33,934 [Worker-169: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:37:33,934 [Worker-169: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/Dependency/src/test/resources
+2019-10-31 19:37:35,378 [Worker-165: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:37:35,378 [Worker-165: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/SpringAopAfterReturningAndThrowingException/src/main/resources
+2019-10-31 19:37:35,379 [Worker-165: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:37:35,379 [Worker-165: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/SpringAopAfterReturningAndThrowingException/src/test/resources
+2019-10-31 19:37:36,444 [Worker-165: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:37:36,444 [Worker-165: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/SpringAopAfterReturningAndThrowingException/src/main/resources
+2019-10-31 19:37:36,445 [Worker-165: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-10-31 19:37:36,445 [Worker-165: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/admin106/eclipse-workspace/SpringAopAfterReturningAndThrowingException/src/test/resources
