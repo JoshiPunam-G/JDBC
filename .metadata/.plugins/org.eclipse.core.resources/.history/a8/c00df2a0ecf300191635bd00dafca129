@@ -1,9 +1,0 @@
-package com.bridgelabz.Dependency;
-
-public class ClassPathXmlApplocationContext implements ApplicationContext {
-
-	public ClassPathXmlApplocationContext(String string) {
-		// TODO Auto-generated constructor stub
-	}
-
-}

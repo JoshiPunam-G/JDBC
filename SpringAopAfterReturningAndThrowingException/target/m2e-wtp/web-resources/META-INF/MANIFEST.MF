@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Built-By: admin106
+Implementation-Build: 
+Build-Time: 2019-10-31T06:19:16+0000
+Version: 6.4
+Build-Jdk: 1.8.0_222
+Created-By: Maven Integration for Eclipse
+

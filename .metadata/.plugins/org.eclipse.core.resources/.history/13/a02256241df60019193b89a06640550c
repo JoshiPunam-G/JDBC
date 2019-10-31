@@ -1,5 +1,0 @@
-package com.bridgelabz.spring_core_annotation;
-
-public @interface ComponenetScan {
-
-}

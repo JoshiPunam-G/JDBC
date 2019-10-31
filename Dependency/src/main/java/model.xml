@@ -1,29 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
 	xmlns:aop="http://www.springframework.org/schema/aop"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans  
-    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd   
-    http://www.springframework.org/schema/aop   
-    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd
+    http://www.springframework.org/schema/aop
+    http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
+   <!-- <aop:aspectj-autoproxy proxy-target-class="true"/>
+   <context:component-scan base-package="com.bridgelabz.aop.annotation"></context:component-scan>
+   <context:component-scan base-package="com.bridgelabz.aop.annotation"></context:component-scan> -->
 	<aop:config>
 		<aop:pointcut
-			expression="execution(* com.bridgelabz.spring.model.AccountServiceImpl.*(..))"
-			id="selectAll" />
+			expression="execution(* com.bridgelaz.aop.before.AccountServiceImpl.*(..))"
+			id="selectALL" />
 		<aop:aspect ref="accountServiceAspect">
-			<aop:before method="beforeAdvice" pointcut-ref="selectAll" />
+			<aop:before method="beforeAdvice" pointcut-ref="selectALL"/>
+			<aop:after method="afterAdvice" pointcut-ref="selectALL"/>
 		</aop:aspect>
 	</aop:config>
 
-	<bean id="accountServiceAspect"
-		class="com.bridgelabz.spring.model.AccountServiceAspect"></bean>
+	<bean id="accountServiceAspect" class="com.bridgelaz.aop.before.AccountServiceAspect">
+	</bean>
 
-	<bean id="accountService"
-		class="com.bridgelabz.spring.model.AccountServiceImpl"></bean>
-
-
+	<bean id="accountService" class="com.bridgelaz.aop.before.AccountServiceImpl"></bean>
 </beans>

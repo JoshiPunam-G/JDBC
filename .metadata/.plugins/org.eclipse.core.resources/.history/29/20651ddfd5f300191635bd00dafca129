@@ -1,9 +1,0 @@
-package org.springframework.context;
-
-import com.bridgelabz.Dependency.Vehicle;
-
-@SuppressWarnings("unused")
-public class ClassPathXmlApplicationContext {
-
-
-}

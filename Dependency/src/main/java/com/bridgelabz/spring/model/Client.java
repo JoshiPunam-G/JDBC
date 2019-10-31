@@ -10,7 +10,6 @@ public class Client {
 		ApplicationContext context=new ClassPathXmlApplicationContext("model.xml");
 		AccountServiceImpl bean=context.getBean("accountService",AccountServiceImpl.class);
       	bean.updateAccountBalance(new Account("123456","Money Transfer"), 2000);
-	
 	((AbstractApplicationContext) context).close();
 	}
 

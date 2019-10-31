@@ -1,9 +1,0 @@
-package com.bridgelabz.Dependency;
-
-public class Bike {
-	public void drive()
-	{
-		System.out.println("Running ...");
-	}
-
-}
