@@ -11,11 +11,12 @@ public class MouseMovement {
 		System.setProperty("webdriver.chrome.driver", "/home/admin106/Downloads/chromedriver_linux64/chromedriver");
 	    WebDriver driver = new ChromeDriver();
 	    driver.manage().window().maximize();
+	    driver.manage().deleteAllCookies();
 	    driver.get("https://aws.amazon.com/");
 	 
 		Actions action=new Actions(driver);
  		action.moveToElement(driver.findElement(By.linkText("AWS Marketplace"))).build().perform();
-       
+        
 	}
 
 }

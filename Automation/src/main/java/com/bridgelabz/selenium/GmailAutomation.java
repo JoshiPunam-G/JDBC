@@ -30,7 +30,7 @@ public class GmailAutomation {
 		try {
 		 robot=new Robot();
 		} catch (AWTException e) {
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 		
 		robot.delay(250);
@@ -72,19 +72,14 @@ public class GmailAutomation {
 		Thread.sleep(2000);
 		
 		/**Compose Mail */
-//		driver.findElement(By.xpath(" //div[@class='T-I J-J5-Ji T-I-KE L3']")).click();
-//		Thread.sleep(2000);
-		
-		Robot robot=new Robot();
-		robot.mouseMove(72, 48);
-		robot.keyPress(KeyEvent.VK_ALT);
-		robot.keyPress(KeyEvent.VK_F);
-		robot.keyRelease(KeyEvent.VK_F);
-		robot.keyRelease(KeyEvent.VK_ALT);
+		driver.findElement(By.xpath(" //div[@class='T-I J-J5-Ji T-I-KE L3']")).click();
 		Thread.sleep(2000);
-		robot.keyPress(KeyEvent.VK_W);
-		robot.keyRelease(KeyEvent.VK_W);
-		Thread.sleep(2000);
+//		
+//		Robot robot=new Robot();
+//		int x=driver.findElement(By.xpath("//*[@class='gb_Se']")).getLocation().getX();
+//		int y=driver.findElement(By.xpath("//*[@class='gb_Se']")).getLocation().getY();
+//		Thread.sleep(1000);
+//		robot.mouseMove(x, y);
 	
 		/**Sent Mail  */
 		driver.findElement(By.xpath("//textarea[@name='to']")).sendKeys("punamsj20@gmail.com");
